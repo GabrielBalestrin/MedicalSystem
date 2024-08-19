@@ -7,7 +7,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 // Aplicar o middleware de autenticação às rotas protegidas
 router.use(authMiddleware);
 
-// Suas rotas protegidas aqui
+
 router.get('/', (req, res) => {
   res.render('/apresentacao');
 });
